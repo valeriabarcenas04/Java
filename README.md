@@ -2,4 +2,6 @@
 
 # Parcial 1
 
--[Arreglos](https://github.com/valeriabarcenas04/Java/blob/main/Arreglos.java)
+- [Arreglos](https://github.com/valeriabarcenas04/Java/blob/main/Arreglos.java)
+- [Fibonacci](https://github.com/valeriabarcenas04/Java/blob/main/Fibonacci.java)
+- [FizzBuzz](https://github.com/valeriabarcenas04/Java/blob/main/Fizzbuzz.java)
