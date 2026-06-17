@@ -6,3 +6,9 @@
 - [Fibonacci](https://github.com/valeriabarcenas04/Java/blob/main/Fibonacci.java)
 - [FizzBuzz](https://github.com/valeriabarcenas04/Java/blob/main/Fizzbuzz.java)
 - [Números Primos](https://github.com/valeriabarcenas04/Java/blob/main/NumerosPrimos.java)
+- [Contraseña](https://github.com/valeriabarcenas04/Java/blob/main/contrase%C3%B1a.java)
+- [Calculadora](https://github.com/valeriabarcenas04/Java/blob/main/calculadora.java)
+- [Reto18](https://github.com/valeriabarcenas04/Java/blob/main/Reto18.java)
+- [Reto17](https://github.com/valeriabarcenas04/Java/blob/main/Reto17.java)
+- [Reto16](https://github.com/valeriabarcenas04/Java/blob/main/Reto16.java)
+- 
