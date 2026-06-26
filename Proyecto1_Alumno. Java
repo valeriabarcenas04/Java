@@ -1,0 +1,209 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Proyecto1_Alumno {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Curso> cursos = new ArrayList<>();
+        Stack<String> historial = new Stack<>();
+
+        int opcion;
+
+        do {
+
+            System.out.println("\n====================================");
+            System.out.println("   SISTEMA DE GESTION DE CURSOS UTC ");
+            System.out.println("====================================");
+            System.out.println("1. Agregar nuevo curso");
+            System.out.println("2. Mostrar todos los cursos");
+            System.out.println("3. Buscar curso por clave");
+            System.out.println("4. Inscribir estudiante");
+            System.out.println("5. Dar de baja estudiante");
+            System.out.println("6. Eliminar curso");
+            System.out.println("7. Ver historial de acciones");
+            System.out.println("8. Mostrar cursos con cupo disponible");
+            System.out.println("9. Salir del sistema");
+            System.out.print("Selecciona una opcion: ");
+
+            opcion = Integer.parseInt(sc.nextLine());
+
+            switch (opcion) {
+
+                case 1:
+                    System.out.println("\n--- AGREGAR CURSO ---");
+
+                    System.out.print("Clave del curso: ");
+                    String clave = sc.nextLine();
+
+                    System.out.print("Nombre del curso: ");
+                    String nombre = sc.nextLine();
+
+                    System.out.print("Docente: ");
+                    String docente = sc.nextLine();
+
+                    System.out.print("Cupo maximo: ");
+                    int cupo = Integer.parseInt(sc.nextLine());
+
+                    cursos.add(new Curso(clave, nombre, docente, cupo));
+                    historial.push("Se agregó el curso: " + clave);
+
+                    System.out.println("✔ Curso agregado correctamente.");
+                    break;
+
+                case 2:
+                    System.out.println("\n--- LISTA DE CURSOS ---");
+
+                    if (cursos.isEmpty()) {
+                        System.out.println("No hay cursos registrados.");
+                    } else {
+                        for (Curso c : cursos) {
+                            System.out.println("Clave: " + c.clave);
+                            System.out.println("Nombre: " + c.nombre);
+                            System.out.println("Docente: " + c.docente);
+                            System.out.println("Inscritos: " + c.inscritos + "/" + c.cupoMaximo);
+                            System.out.println("---------------------------");
+                        }
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("\n--- BUSCAR CURSO ---");
+
+                    System.out.print("Ingresa la clave: ");
+                    String buscar = sc.nextLine();
+
+                    boolean encontradoBuscar = false;
+
+                    for (Curso c : cursos) {
+                        if (c.clave.equals(buscar)) {
+                            System.out.println("✔ Curso encontrado:");
+                            System.out.println("Nombre: " + c.nombre);
+                            System.out.println("Docente: " + c.docente);
+                            encontradoBuscar = true;
+                        }
+                    }
+
+                    if (!encontradoBuscar) {
+                        System.out.println("❌ Curso no encontrado.");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("\n--- INSCRIPCION ---");
+
+                    System.out.print("Clave del curso: ");
+                    String insc = sc.nextLine();
+
+                    boolean encontradoIns = false;
+
+                    for (Curso c : cursos) {
+                        if (c.clave.equals(insc)) {
+                            encontradoIns = true;
+
+                            if (c.inscritos < c.cupoMaximo) {
+                                c.inscritos++;
+                                historial.push("Inscripción en: " + c.clave);
+                                System.out.println("✔ Estudiante inscrito.");
+                            } else {
+                                System.out.println("❌ Cupo lleno.");
+                            }
+                        }
+                    }
+
+                    if (!encontradoIns) {
+                        System.out.println("❌ Curso no encontrado.");
+                    }
+                    break;
+
+                case 5:
+                    System.out.println("\n--- BAJA DE ESTUDIANTE ---");
+
+                    System.out.print("Clave del curso: ");
+                    String baja = sc.nextLine();
+
+                    boolean encontradoBaja = false;
+
+                    for (Curso c : cursos) {
+                        if (c.clave.equals(baja)) {
+                            encontradoBaja = true;
+
+                            if (c.inscritos > 0) {
+                                c.inscritos--;
+                                historial.push("Baja en: " + c.clave);
+                                System.out.println("✔ Baja realizada.");
+                            } else {
+                                System.out.println("❌ No hay estudiantes inscritos.");
+                            }
+                        }
+                    }
+
+                    if (!encontradoBaja) {
+                        System.out.println("❌ Curso no encontrado.");
+                    }
+                    break;
+
+                case 6:
+                    System.out.println("\n--- ELIMINAR CURSO ---");
+
+                    System.out.print("Clave del curso: ");
+                    String elim = sc.nextLine();
+
+                    boolean eliminado = cursos.removeIf(c -> c.clave.equals(elim));
+
+                    if (eliminado) {
+                        historial.push("Curso eliminado: " + elim);
+                        System.out.println("✔ Curso eliminado.");
+                    } else {
+                        System.out.println("❌ Curso no encontrado.");
+                    }
+                    break;
+
+                case 7:
+                    System.out.println("\n--- HISTORIAL DE ACCIONES ---");
+
+                    if (historial.isEmpty()) {
+                        System.out.println("No hay acciones registradas.");
+                    } else {
+                        for (String h : historial) {
+                            System.out.println("- " + h);
+                        }
+                    }
+                    break;
+
+                case 8:
+                    System.out.println("\n--- CURSOS CON CUPO DISPONIBLE ---");
+
+                    boolean hayDisponibles = false;
+
+                    for (Curso c : cursos) {
+                        if (c.inscritos < c.cupoMaximo) {
+                            System.out.println("Clave: " + c.clave);
+                            System.out.println("Nombre: " + c.nombre);
+                            System.out.println("Docente: " + c.docente);
+                            System.out.println("Disponibles: " + (c.cupoMaximo - c.inscritos));
+                            System.out.println("---------------------------");
+                            hayDisponibles = true;
+                        }
+                    }
+
+                    if (!hayDisponibles) {
+                        System.out.println("No hay cursos con cupo disponible.");
+                    }
+                    break;
+
+                case 9:
+                    System.out.println("Saliendo del sistema...");
+                    break;
+
+                default:
+                    System.out.println("❌ Opcion invalida.");
+            }
+
+        } while (opcion != 9);
+
+        sc.close();
+    }
+}
