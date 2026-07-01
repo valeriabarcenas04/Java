@@ -11,8 +11,8 @@
 - [Reto18](https://github.com/valeriabarcenas04/Java/blob/main/Reto18.java)
 - [Reto17](https://github.com/valeriabarcenas04/Java/blob/main/Reto17.java)
 - [Reto16](https://github.com/valeriabarcenas04/Java/blob/main/Reto16.java)
-- [Proyecto 1 Alumno] (https://github.com/valeriabarcenas04/Java/blob/main/Proyecto1_Alumno.%20Java ) 
+- [Proyecto 1 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto1_Alumno.%20Java ) 
 
 # Parcial 2
 
-[Cuadro Comparativo] (https://github.com/valeriabarcenas04/Java/blob/main/IMG_20260701_101908.jpg) 
+[Cuadro Comparativo](https://github.com/valeriabarcenas04/Java/blob/main/IMG_20260701_101908.jpg) 
