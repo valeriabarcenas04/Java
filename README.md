@@ -14,3 +14,5 @@
 - [Proyecto 1 Alumno] (https://github.com/valeriabarcenas04/Java/blob/main/Proyecto1_Alumno.%20Java ) 
 
 # Parcial 2
+
+[Cuadro Comparativo] (https://github.com/valeriabarcenas04/Java/blob/main/IMG_20260701_101908.jpg) 
