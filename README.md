@@ -15,8 +15,8 @@
 
 # Parcial 2
 
--[Cuadro Comparativo](https://github.com/valeriabarcenas04/Java/blob/main/IMG_20260701_101908.jpg) 
--[Nodo](https://github.com/valeriabarcenas04/Java/blob/main/Nodo.java)
--[ListaBasica](https://github.com/valeriabarcenas04/Java/blob/main/ListaEnlazadaBasica.java)
--[Lista](https://github.com/valeriabarcenas04/Java/blob/main/ListaEnlazada.java)
--[Lista Principal](https://github.com/valeriabarcenas04/Java/commit/05cf1b5ad9c532c4cc349aa3a5f4f8431c0d606a)
+- [Cuadro Comparativo](https://github.com/valeriabarcenas04/Java/blob/main/IMG_20260701_101908.jpg) 
+- [Nodo](https://github.com/valeriabarcenas04/Java/blob/main/Nodo.java)
+- [ListaBasica](https://github.com/valeriabarcenas04/Java/blob/main/ListaEnlazadaBasica.java)
+- [Lista](https://github.com/valeriabarcenas04/Java/blob/main/ListaEnlazada.java)
+- [Lista Principal](https://github.com/valeriabarcenas04/Java/commit/05cf1b5ad9c532c4cc349aa3a5f4f8431c0d606a)
