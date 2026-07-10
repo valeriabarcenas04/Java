@@ -9,7 +9,7 @@ public class ListaEnlazada {
     public void recorrido(){
         Nodo actual = cabeza;
         while (actual != null){
-            System.out.println(actual.Dato);
+            System.out.println(actual.dato);
             actual = actual.siguienteNodo;
         }
     }
@@ -31,12 +31,36 @@ public class ListaEnlazada {
         }
         Nodo actual = cabeza;
         while (actual.siguienteNodo != null){
-            if(actual.siguienteNodo.Dato.equals(datoEliminar)){
+            if(actual.siguienteNodo.dato.equals(datoEliminar)){
                 actual.siguienteNodo = actual.siguienteNodo.siguienteNodo;
                 return true;
             }
             actual = actual.siguienteNodo;
         }
+        return false;
+    }
+    public boolean buscarNodo(String datoBuscar){
+        Nodo actual = cabeza;
+
+        while(actual != null){
+            if(actual.dato.equals(datoBuscar)){
+                return true;
+            }
+            actual = actual.siguienteNodo;
+        }
+        return false;
+    }
+    public boolean actualizarNodo(String datoActual, String datoNuevo){
+        Nodo actual = cabeza;
+
+        while(actual != null){
+            if(actual.dato.equals(datoActual)){
+                actual.dato = datoNuevo;
+                return true;
+            }
+            actual = actual.siguienteNodo;
+        }
+
         return false;
     }
 }
