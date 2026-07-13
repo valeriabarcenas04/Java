@@ -14,12 +14,13 @@ public class MenuListaEnlazada {
             System.out.println("\n");
             System.out.println("   LISTA ENLAZADA   ");
             System.out.println("");
-            System.out.println("1. Agregar nodo");
-            System.out.println("2. Mostrar lista");
-            System.out.println("3. Buscar nodo");
-            System.out.println("4. Actualizar nodo");
-            System.out.println("5. Eliminar nodo");
-            System.out.println("6. Salir");
+            System.out.println("1. Agregar nodo al inicio");
+            System.out.println("2. Agregar nodo al final");
+            System.out.println("3. Mostrar lista");
+            System.out.println("4. Buscar nodo");
+            System.out.println("5. Actualizar nodo");
+            System.out.println("6. Eliminar nodo");
+            System.out.println("7. Salir");
             System.out.print("Seleccione una opcion: ");
             opcion = entrada.nextInt();
             entrada.nextLine(); // Limpiar buffer
@@ -29,22 +30,32 @@ public class MenuListaEnlazada {
                 case 1:
                     System.out.print("Ingrese el dato a agregar: ");
                     dato = entrada.nextLine();
-                    lista.agregarFinal(dato);
+                    lista.agregarNodoInicio(dato);
                     System.out.println("Nodo agregado correctamente.");
                     break;
 
                 case 2:
+                    System.out.print("Ingrese el dato del nodo a agregar al final: ");
+                    String datoFinal = entrada.nextLine();
+                    lista.agregarFinal(datoFinal);
+                    break;
+
+                case 3:
                     System.out.println("\n      LISTA      ");
                     lista.recorrido();
                     break;
 
-                case 3:
-                    System.out.print("Ingrese el dato a buscar: ");
-                    dato = entrada.nextLine();
-                    lista.buscarNodo(dato);
+                case 4:
+                    System.out.print("Ingrese el dato del nodo a buscar: ");
+                    String datoBuscar = entrada.nextLine();
+                    if (lista.buscarNodo(datoBuscar)) {
+                        System.out.println("Nodo encontrado.");
+                    } else {
+                        System.out.println("Nodo no encontrado.");
+                    }
                     break;
 
-                case 4:
+                case 5:
                     System.out.print("Ingrese el dato que desea actualizar: ");
                     dato = entrada.nextLine();
 
@@ -54,13 +65,13 @@ public class MenuListaEnlazada {
                     lista.actualizarNodo(dato, nuevoDato);
                     break;
 
-                case 5:
+                case 6:
                     System.out.print("Ingrese el dato que desea eliminar: ");
                     dato = entrada.nextLine();
                     lista.eliminarNodo(dato);
                     break;
 
-                case 6:
+                case 7:
                     System.out.println("Programa finalizado.");
                     break;
 
@@ -68,7 +79,7 @@ public class MenuListaEnlazada {
                     System.out.println("Opcion invalida.");
             }
 
-        } while (opcion != 6);
+        } while (opcion != 7);
 
         entrada.close();
     }
