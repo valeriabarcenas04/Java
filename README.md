@@ -11,7 +11,8 @@
 - [Reto18](https://github.com/valeriabarcenas04/Java/blob/main/Reto18.java)
 - [Reto17](https://github.com/valeriabarcenas04/Java/blob/main/Reto17.java)
 - [Reto16](https://github.com/valeriabarcenas04/Java/blob/main/Reto16.java)
-#Proyecto Final
+  
+# Proyecto Final
 - [Proyecto 1 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto1_Alumno.%20Java) 
 
 # Parcial 2
@@ -28,5 +29,11 @@
 - [Metodo Recursivo](https://github.com/valeriabarcenas04/Java/blob/main/MetodoRecursivo.java)
 - [Factorial](https://github.com/valeriabarcenas04/Java/blob/main/Factorial.java)
 - [Fibonacci](https://github.com/valeriabarcenas04/Java/blob/main/fibonacci.java)
-#Proyecto Final
-
+  
+# Proyecto Final
+-[Nodo](https://github.com/valeriabarcenas04/Java/blob/main/nodo.java)
+-[Nodo Doble](https://github.com/valeriabarcenas04/Java/blob/main/nodoDoble.java)
+-[Curso](https://github.com/valeriabarcenas04/Java/blob/main/Curso.java)
+-[Lista Doble](https://github.com/valeriabarcenas04/Java/blob/main/ListaDoble.java)
+-[Lista Enlazada](https://github.com/valeriabarcenas04/Java/blob/main/listaEnlazada.java)
+-[Proyecto 2 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto2_Alumno.java)
