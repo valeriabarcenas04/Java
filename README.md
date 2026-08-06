@@ -39,5 +39,6 @@
 - [Proyecto 2 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto2_Alumno.java)
 
 # Parcial 3
-
--
+- [Nodo](https://github.com/valeriabarcenas04/Java/blob/main/Nodo3.java)
+- [Main](https://github.com/valeriabarcenas04/Java/blob/main/Main.java)
+- [Grafo Matriz](https://github.com/valeriabarcenas04/Java/commit/6537811308879ac0aef8504d5cdcf410619606a5)
