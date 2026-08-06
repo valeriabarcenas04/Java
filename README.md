@@ -31,9 +31,13 @@
 - [Fibonacci](https://github.com/valeriabarcenas04/Java/blob/main/fibonacci.java)
   
 # Proyecto Final
--[Nodo](https://github.com/valeriabarcenas04/Java/blob/main/nodo.java)
--[Nodo Doble](https://github.com/valeriabarcenas04/Java/blob/main/nodoDoble.java)
--[Curso](https://github.com/valeriabarcenas04/Java/blob/main/Curso.java)
--[Lista Doble](https://github.com/valeriabarcenas04/Java/blob/main/ListaDoble.java)
--[Lista Enlazada](https://github.com/valeriabarcenas04/Java/blob/main/listaEnlazada.java)
--[Proyecto 2 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto2_Alumno.java)
+- [Nodo](https://github.com/valeriabarcenas04/Java/blob/main/nodo.java)
+- [Nodo Doble](https://github.com/valeriabarcenas04/Java/blob/main/nodoDoble.java)
+- [Curso](https://github.com/valeriabarcenas04/Java/blob/main/Curso.java)
+- [Lista Doble](https://github.com/valeriabarcenas04/Java/blob/main/ListaDoble.java)
+- [Lista Enlazada](https://github.com/valeriabarcenas04/Java/blob/main/listaEnlazada.java)
+- [Proyecto 2 Alumno](https://github.com/valeriabarcenas04/Java/blob/main/Proyecto2_Alumno.java)
+
+# Parcial 3
+
+-
